@@ -15,9 +15,9 @@ app.use((req, res, next) => {
 
 //middleware de rota
 const router = express.Router();
-router.get('/',(req,res)=>{
-    res.send("Chegou aqui")
-})
+router.get("/", (req, res) => {
+  res.send("Chegou aqui");
+});
 
 router.post('/', (req,res)=>{
     res.status(201).send("Inserido com sucesso");
